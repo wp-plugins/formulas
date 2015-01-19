@@ -1,0 +1,59 @@
+/* formulas.css */
+
+.formulas form {
+	text-align: left !important;
+}
+.formulas-cr {
+/*	border: 4px solid #000000; */
+}
+.formulas-cr-row {
+	margin: 10px 0;
+}
+.formulas label {
+	display: inline-block;
+	width: 60%;
+	max-width: 250px;
+}
+
+.formulas input {
+	border-radius: 1px;
+/*	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2); */
+	border: 1px solid #CEE1E8;
+}
+.formulas-ed input,
+.formulas-cr input {
+	width: 100px;
+}
+
+.formulas input:focus,
+.formulas select:focus,
+.formulas textarea:focus {
+    border: 1px solid #AFCDD8;
+    background-colorX: #F6F6F6; 
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.formulas input.formula-error {
+	border: 1px solid #FF0000;
+}
+
+.formulas-btn {
+	border-radius: 1px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	color: #ffffff;
+	background-color: #222222;
+	display: inline-block;
+	font-size: 90% !important;
+	font-weight: bold !important;
+	height: 48px;
+	line-height: 48px;
+	margin: 10px 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	width: 100% !important;
+	max-width: 350px;
+	cursor: pointer;
+}
