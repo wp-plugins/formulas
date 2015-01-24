@@ -44,17 +44,10 @@ class FormulasPlugin {
 			$this->m_settings['include_css'] = true;
 			
 			// functions here
-			add_action( 'init', 'cms_tpv_load_textdomain' );
 			add_shortcode( 'formulas' , array( $this, 'shortcode') );
 			add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
     } 
-		
-		function cms_tpv_load_textdomain() {
-			// echo "load textdomain";
-			if (is_admin()) {
-				load_plugin_textdomain('cms-tree-page-view', WP_CONTENT_DIR . "/plugins/languages", "/cms-tree-page-view/languages");
-			}
-		}
+
 
 		public function shortcode($atts)
 		{
